@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+<script src="./scripts/coach.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -38,23 +38,23 @@
   <label>Event Select</label>
   <select class="browser-default">
     <option value="" disabled selected>Choose Event</option>
-    <option value="1">Cricket</option>
-    <option value="2">Football</option>
-    <option value="3">Hockey</option>
+    <option value="volleyball">Volleyball</option>
+    <option value="badminton">Badminton</option>
+    <option value="sprint">Sprint</option>
   </select>
   <div class="section row">
           <div class="input-field col s12 m4 ">
             <i class="material-icons prefix">sports_cricket</i>
-            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-            <label for="icon_prefix2">1st Position</label>
+            <textarea id="name1" class="materialize-textarea"></textarea>
+            <label for="name1">1st Position</label>
           </div>
           <div class="input-field col s12 m4 ">
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                <label for="icon_prefix2">Class</label>
+                <textarea id="class1" class="materialize-textarea"></textarea>
+                <label for="class1">Class</label>
               </div>
               <div class="input-field col s12 m4 ">
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix2">Section</label>
+                  <textarea id="section1" class="materialize-textarea"></textarea>
+                  <label for="section1">Section</label>
                 </div>
   
 
@@ -63,18 +63,18 @@
 <div class="section row">
           <div class="input-field col s12 m4  ">
               <i class="material-icons prefix">sports_cricket</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-              <label for="icon_prefix2">2nd Position</label>
+              <textarea id="name2" class="materialize-textarea"></textarea>
+              <label for="name2">2nd Position</label>
             </div>
             <div class="input-field col s12 m4 ">
                    
-                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Class</label>
+                    <textarea id="class2" class="materialize-textarea"></textarea>
+                    <label for="class2">Class</label>
                   </div>
     
                   <div class="input-field col s12 m4 ">
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Section</label>
+                      <textarea id="section2" class="materialize-textarea"></textarea>
+                      <label for="section2">Section</label>
                     </div>
       
    
@@ -82,22 +82,22 @@
                 <div class="section row">
             <div class="input-field col s12 m4 ">
                 <i class="material-icons prefix">sports_cricket</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                <label for="icon_prefix2">3rd Position</label>
+                <textarea id="name3" class="materialize-textarea"></textarea>
+                <label for="name3">3rd Position</label>
               </div>
               <div class="input-field col s12 m4 ">
     
-                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Class</label>
+                    <textarea id="class3" class="materialize-textarea"></textarea>
+                    <label for="class3">Class</label>
                   </div>
                   <div class="input-field col s12 m4 ">
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Section</label>
+                      <textarea id="section3" class="materialize-textarea"></textarea>
+                      <label for="section3">Section</label>
                     </div>
       
                 </div>
         </div>
-        <a href="./coach.html" class="waves-effect waves-light btn-large"><i class="material-icons right white-text">arrow_forward</i>Submit</a>  
+        <a onclick="handleSubmit()"  class="waves-effect waves-light btn-large"><i class="material-icons right white-text">arrow_forward</i>Submit</a>  
       </form>
     </div>
     </div>
